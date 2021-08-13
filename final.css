@@ -9,134 +9,58 @@
 
 
 /* =========================
-   MODERN LAYOUT #1
+   3D LAYER EFFECT
    ========================= */
 
-.final__layout1 article {
-  width: 58%;
-  float: left;
+.final__layers {
+  position: relative;
+  min-height: 638px;
+  max-width: 360px;
 }
 
-.final__layout1 aside {
-  width: 40%;
-  float: right;
+.final__layers img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  transition: all ease 1600ms;
+  transform-style: preserve-3d;
 }
 
-.final__layout1 footer {
-  clear: both;
+.final__layers:hover img {
+  /*
+  The "perspective" CSS function (or property) enables 3D space and produces the illustion of "distance" between the Z plane and the user.
+
+  Smaller value = exaggerated effect
+  Larger value = subtle effect
+  */
+  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(180px);
 }
 
-
-/* =========================
-   MODERN LAYOUT #2
-   ========================= */
-
-.final__layout2 header .logo {
-  width: 20%;
-  float: left;
-  margin: 0;
+.final__layers img.mid {
+  width: 320px;
+  left: 20px;
 }
 
-.final__layout2 header nav {
-  width: 78%;
-  float: right;
-  margin: 0;
+.final__layers img.top {
+  width: 300px;
+  left: 30px;
+  top: -5px;
 }
 
-/* simple clearfix to prevent collapse */
-.final__layout2 header::after {
-  display: table;
-  content: "";
-  clear: both;
+.final__layers img.tippy {
+  width: 280px;
+  top: -150px;
+  left: 40px;
 }
 
-.final__layout2 article {
-  width: 50%;
-  margin-left: 2%;
-  float: left;
+.final__layers:hover img.mid {
+  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(240px);
 }
 
-.final__layout2 aside.sidenav {
-  width: 23%;
-  float: left;
+.final__layers:hover img.top {
+  transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(280px);
 }
 
-.final__layout2 aside.sidebar {
-  width: 23%;
-  float: right;
-}
-
-.final__layout2 footer {
-  clear: both;
-}
-
-
-/* =========================
-   MODERN LAYOUT #3
-   ========================= */
-
-.final__layout3 header .logo {
-  width: 20%;
-  float: right;
-  margin: 0;
-}
-
-.final__layout3 header nav {
-  width: 78%;
-  float: left;
-  margin: 0;
-}
-
-/* simple clearfix to prevent collapse */
-.final__layout3 header::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.final__layout3 article {
-  width: 32%;
-  float: left;
-  margin: 0 2% 0 0;
-}
-
-  /* clear margin of last article to allow it to fit within layout */
-  .final__layout3 article:last-child {
-    margin: 0;
-  }
-
-/* simple clearfix to prevent collapse */
-.final__layout3 .articles::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.final__layout2 footer {
-  clear: both;
-}
-
-
-/* ============================================
-   SIMPLE MEDIA QUERIES FOR RESPONSIVE LAYOUTS
-   ============================================ */
-
-@media screen and ( max-width : 768px ) {
-
-  .final__layout1 article,
-  .final__layout1 aside,
-  .final__layout2 header .logo,
-  .final__layout2 header nav,
-  .final__layout2 article,
-  .final__layout2 aside.sidenav,
-  .final__layout2 aside.sidebar,
-  .final__layout3 article,
-  .final__layout3 aside,
-  .final__layout3 header .logo,
-  .final__layout3 header nav {
-    float: none;
-    width: 100%;
-    margin: 0 0 2%;
-  }
-
+.final__layers:hover img.tippy {
+  transform: perspective(1200px) rotateX(60deg) rotateY(20deg) rotateZ(-25deg) translateX(-20px) translateY(20px) translateZ(260px);
 }

@@ -11,7 +11,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Modern Layouts | Code 30 Things in 30 Days with CSS3</title>
+    <title>3D Layers | Code 30 Things in 30 Days with CSS3</title>
 
     <!-- NORMALIZE CSS -->
     <link rel="stylesheet" href="normalize.css">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="theme.css">
 
     <!-- FINAL PROJECT CSS (use for reference) 
-    <link rel="stylesheet" href="final.css"> -->
+    <link rel="stylesheet" href="final.css">-->
 
     <!-- SANDBOX CSS (this is your file!) -->
     <link rel="stylesheet" href="sandbox.css">
@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
   </head>
   <body>
-    <h1><small>Day #9</small> Modern Layouts</h1>
+    <h1><small>Day #26</small> 3D Layers</h1>
 
 
 
@@ -36,83 +36,21 @@
       <h2>Sandbox <small>This is where you play</small></h2>
       <div class="content">
 
-        <p><strong>Instructions:</strong> Using CSS, style the following sections to match the layouts in the "Final Result" below. Bonus points for making them responsive with Media Queries!</p>
+        <p><strong>Instructions:</strong> Create a 3D layer effect with CSS3!</p>
 
-        <section class="layout1">
-          <h4>Modern Layout #1</h4>
+        <section>
 
-          <header>
-            <p>This is the <code>header</code></p>
-          </header>
-          <article>
-            <p>This is an <code>article</code>. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </article>
-          <aside>
-            <p>Let's throw in an <code>aside</code> as our content sidebar.</p>
-          </aside>
-          <footer>
-            <p>Of course, we cannot forget the <code>footer</code>!</p>
-          </footer>
-        </section>
+          <h4>3D Layer Effect</h4>
 
-        <section class="layout2">
-          <h4>Modern Layout #2</h4>
-
-          <header>
-            <div class="logo">
-              Logo
-            </div>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </header>
-          <aside class="sidenav">
-            <p>This is another <code>aside</code>, which we'll use as our left navigation bar.</p>
-          </aside>
-          <article>
-            <p>This is an <code>article</code>. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </article>
-          <aside class="sidebar">
-            <p>Let's throw in an <code>aside</code> as our content sidebar.</p>
-          </aside>
-          <footer>
-            <p>Of course, we cannot forget the <code>footer</code>!</p>
-          </footer>
-        </section>
-
-        <section class="layout3">
-          <h4>Modern Layout #3</h4>
-
-          <header>
-            <div class="logo">
-              Logo Right
-            </div>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-              </ul>
-            </nav>
-          </header>
-          <div class="articles">
-            <article>
-              <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article>
-              <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article>
-              <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
+          <div class="layers">
+            
+            <img src="Images/back.svg" alt="back layer" class="back">
+            <img src="Images/mid.svg" alt="mid layer" class="mid">
+            <img src="Images/top.svg" alt="top layer" class="top">
+            <img src="Images/tippytop.svg" alt="tippy top layer" class="tippy">
+            
           </div>
-          <footer>
-            <p>Of course, we cannot forget the <code>footer</code>!</p>
-          </footer>
+
         </section>
 
       </div>
@@ -122,81 +60,17 @@
         <h2>Final Result <small>Use this for reference!</small></h2>
         <div class="content">
 
-          <section class="final__layout1">
-            <h4>Modern Layout #1</h4>
+          <section>
 
-            <header>
-              <p>This is the <code>header</code></p>
-            </header>
-            <article>
-              <p>This is an <code>article</code>. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <aside>
-              <p>Let's throw in an <code>aside</code> as our content sidebar.</p>
-            </aside>
-            <footer>
-              <p>Of course, we cannot forget the <code>footer</code>!</p>
-            </footer>
-          </section>
+            <h4>3D Layer Effect</h4>
 
-          <section class="final__layout2">
-            <h4>Modern Layout #2</h4>
-
-            <header>
-              <div class="logo">
-                Logo
-              </div>
-              <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </header>
-            <aside class="sidenav">
-              <p>This is another <code>aside</code>, which we'll use as our left navigation bar.</p>
-            </aside>
-            <article>
-              <p>This is an <code>article</code>. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <aside class="sidebar">
-              <p>Let's throw in an <code>aside</code> as our content sidebar.</p>
-            </aside>
-            <footer>
-              <p>Of course, we cannot forget the <code>footer</code>!</p>
-            </footer>
-          </section>
-
-          <section class="final__layout3">
-            <h4>Modern Layout #3</h4>
-
-            <header>
-              <div class="logo">
-                Logo Right
-              </div>
-              <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                </ul>
-              </nav>
-            </header>
-            <div class="articles">
-              <article>
-                <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </article>
-              <article>
-                <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </article>
-              <article>
-                <p>This is an <code>article</code> within a 3 column grid. It contains body text, such as lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </article>
+            <div class="final__layers">
+              <img src="Images/back.svg" alt="back layer" class="back">
+              <img src="Images/mid.svg" alt="mid layer" class="mid">
+              <img src="Images/top.svg" alt="top layer" class="top">
+              <img src="Images/tippytop.svg" alt="tippy top layer" class="tippy">
             </div>
-            <footer>
-              <p>Of course, we cannot forget the <code>footer</code>!</p>
-            </footer>
+
           </section>
 
         </div>
@@ -205,24 +79,25 @@
     <div class="info">
       <h2>Information <small>About this lesson</small></h2>
       <h3>What are we making?</h3>
-      <p>Fun &amp; fancy ways to create modern layouts in CSS with floats!</p>
+      <p>Fun &amp; fancy ways to create a 3D layer effect with CSS3!</p>
 
       <h3>Where can I use it?</h3>
-      <p>In your websites and client projects to create modern and functional layouts.</p>
+      <p>In your websites, client projects and applications as an interesting way to display 3D layers of mockups, wireframes, presentations, blueprints, etc.!</p>
 
       <h3>How compatible are these styles with major browsers?</h3>
       <p>Check the CSS3 styles from your stylesheet <a href="http://caniuse.com/">on this website.</a> It allows you to see the compatibility of every CSS style with major browser.</p>
+
     </div>
 
     <footer>
       <div class="logo">
         <a href="http://codecollege.ca/" id="logo">
 
-          <img src="../_theme-styles/img/bggray.svg" width="60px" id="logo_bg-gray">
-          <img src="../_theme-styles/img/bgyellow.svg" width="60px" id="logo_bg-yellow">
-          <img src="../_theme-styles/img/codecollegelogo.svg" width="60px" id="logo_codecollege">
+          <img src="Images/bggray.svg" width="60px" id="logo_bg-gray">
+          <img src="Images/bgyellow.svg" width="60px" id="logo_bg-yellow">
+          <img src="Images/codecollegelogo.svg" width="60px" id="logo_codecollege">
 
-          <!-- <img src="../_theme-styles/img/codecollegelogo.png" alt="Learn to Code at CodeCollege.ca" height="60px"> -->
+          <!-- <img src="Images/codecollegelogo.png" alt="Learn to Code at CodeCollege.ca" height="60px"> -->
 
         </a>
       </div>

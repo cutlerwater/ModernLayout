@@ -4,123 +4,49 @@
 
    ====================================== */
 
-.layout1 article {
-width: 58%;
-float: left
+.layers {
+position: relative;
+min-height: 640px;
+max-width: 360px;
 }
 
-.layout1 aside {
-width: 40%;
-float: right;
+.layers img {
+position: absolute;
+max-width: 100%;
+height: 100%;
+transition: all ease 1600ms;
+transform-style: preserve-3d;
 }
 
-.layout1 footer {
-clear: both;
+.layers img.mid {
+width: 320px;
+left: 20px;
 }
 
-/* =========================
-   MODERN LAYOUT #2
-   ========================= */
-
-.layout2 header .logo {
-  width: 20%;
-  float: left;
-  margin: 0;
+.layers img.top {
+width: 300px;
+left: 30px;
+top: -5px;
 }
 
-.layout2 header nav {
-  width: 78%;
-  float: right;
-  margin: 0;
+.layers img.tippy {
+width: 280px;
+left: 40px;
+top: -150px;
 }
 
-/* simple clearfix to prevent collapse */
-.layout2 header::after {
-  display: table;
-  content: "";
-  clear: both;
+.layers img:hover {
+transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(180px);
 }
 
-.layout2 article {
-  width: 50%;
-  margin-left: 2%;
-  float: left;
+.layers:hover img.mid {
+transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(240px);
 }
 
-.layout2 aside.sidenav {
-  width: 23%;
-  float: left;
+.layers:hover img.top {
+transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(280px);
 }
 
-.layout2 aside.sidebar {
-  width: 23%;
-  float: right;
-}
-
-.layout2 footer {
-  clear: both;
-}
-
-/* =========================
-   MODERN LAYOUT #3
-   ========================= */
-
-
-.layout3 header .logo {
-width: 20%;
-float: right;
-margin: 0;
-}
-
-.layout3 header nav {
-width: 78%;
-float: left;
-margin: 0;
-}
-
-.layout3 header::after {
-display: table;
-content: "";
-  clear: both;
-}
-
-.layout3 article {
-width: 32%; 
-float: left;
-margin: 0 2% 0 0;
-}
-
-
- /* clear margin of last article to allow it to fit within layout */
-.layout3 article:last-child {
-margin: 0;
-}
-
-.layout3 articles::after {
-display: table;
-content: "";
-clear: both;
-}
-
-.layout3 footer {
-  clear: both;
-}
-
-@media screen and ( max-width: 868px; ) {
-.layout1 article,
-  .layout1 aside,
-  .layout2 header .logo,
-  .layout2 header nav,
-  .layout2 article,
-  .layout2 aside.sidenav,
-  .layout2 aside.sidebar,
-  .layout3 article,
-  .layout3 aside,
-  .layout3 header .logo,
-  .layout3 header nav {
-    float: none;
-    width: 50%;
-    margin: 0 0 2%;
-  }
-
+.layers:hover img.tippy {
+transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(260px);
 }
